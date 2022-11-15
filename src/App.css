@@ -1,41 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2F303A;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+   
+  
+}
+/* NAVBAR */
+.Logomenu{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: grid;  
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "logo navbar";
+  font-size: 1.5rem;
+}
+.logo{
+  grid-area: logo;
+  display: flex;
+  margin-left: -10rem;
+  justify-content: center;
+  align-items: center; 
+  gap: 1rem;
+  color: antiquewhite;   
+}
+/* img{
+  filter: brightness(200%);
+} */
+.navbar{
+  grid-area: navbar;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  gap: 1rem;  
+}
+.Logomenu nav a{
+  text-decoration: none;
+  outline: none;
+  color: antiquewhite;
+  
+}
+/* END NAVBAR */
+
+/* HERO */
+.App::before {
+  content: "";
+  position: absolute;
+  top: 25em;
+  left: 25rem;
+  width: 300px;
+  height: 300px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #bc3a801a;
+}
+.App::after {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  left: 45rem;
+  width: 300px;
+  height: 300px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #3457b21a;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.hero{
+  margin-top: 1rem;
+  display: grid;   
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "banner cta";
+  font-size: 1.5rem;
+  color: antiquewhite;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.banner{
+  grid-area: banner;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.girl{
+  width: 40%;
+  height: 100%;
+  
 }
+.cta{
+  grid-area: cta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;  
+  
+}
+.button-cta{
+  width: 7rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: antiquewhite;
+  background-color: #2796ff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+/* END HERO */
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
