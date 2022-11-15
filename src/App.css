@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #2F303A;
+  
 }
 .App {
   display: flex;
   flex-direction: column;
-   
-  
+  background-color: #2F303A;  
 }
 /* NAVBAR */
 .Logomenu{
@@ -107,8 +106,12 @@
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-
 }
+.button-cta a{
+  outline: none;
+  text-decoration: none;
+}
+
 /* END HERO */
 
 

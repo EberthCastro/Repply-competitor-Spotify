@@ -10,7 +10,7 @@ function Hero() {
       <div className='cta'>
         <h1>Feel The Music</h1>
         <p>Stream over 20 thousand song with a single click</p>
-        <button className='button-cta'>Join Now</button>
+        <button className='button-cta'><a>Join Now</a></button>
       </div>
       
     </div>
