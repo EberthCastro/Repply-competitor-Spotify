@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className='contact'>
       <div className='join'>
-        <p>Join the </p><p className='join-color'>fun.</p>
+        <span>Join the </span><span className='join-color'>fun.</span>
       </div>
       <Form/>      
       

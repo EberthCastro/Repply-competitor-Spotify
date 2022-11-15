@@ -1,8 +1,11 @@
+:root{
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
-  
+  font-family: 'Poppins', sans-serif;  
 }
 
 .App {
@@ -49,7 +52,7 @@
 /* END NAVBAR */
 
 /* HERO */
-.App::before {
+/* .App::before {
   content: "";
   position: absolute;
   top: 25em;
@@ -60,8 +63,8 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #bc3a801a;
-}
-.App::after {
+} */
+/* .App::after {
   content: "";
   position: absolute;
   top: 8rem;
@@ -72,12 +75,12 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #3457b21a;
-}
+} */
 
 .hero{
   margin-top: 6rem;
   display: grid;   
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1.2fr;
   grid-template-areas: "banner cta";
   font-size: 1.5rem;
   color: antiquewhite;
@@ -87,9 +90,10 @@
   display: flex;
   justify-content: center;
   align-items: center;  
+  
 }
 .girl{
-  width: 40%;
+  width: 45%;
   height: 100%;
   
 }
@@ -155,7 +159,7 @@
 .contact{
   margin-top: 1rem;
   display: grid;   
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1.2fr;
   grid-template-areas: "join form";
   font-size: 1.5rem;
   color: antiquewhite;
@@ -164,12 +168,18 @@
   
 }
 .join{
-  grid-area: join;
+  grid-area: join;  
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-left: 20rem;  
-  gap: 2rem; 
+  align-items: center;
+  padding-left: 20rem;   
+  gap: 1rem;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.4rem; 
+}
+.join-color{
+  color: #AE457E;
 }
 .form{
   grid-area: form;
@@ -182,16 +192,24 @@
 }
 .form-container{
   background-color: #202027;
-  padding: 2rem 2rem 2rem 2rem;
-  width: 60%;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  width: 65%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;  
   gap: 2rem; 
 }
+.form-container .input{
+  width: 100%;
+  height: 2rem;
+  background-color: #202027;
+  border-color: wheat;
+  color: antiquewhite;
+  border-radius: 0.3rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
 .button-cta2{
-  width: 15rem;
+  width: 100%;
   padding: 1rem 1rem 1rem 1rem;
   color: antiquewhite;
   background-color: #2796ff;
