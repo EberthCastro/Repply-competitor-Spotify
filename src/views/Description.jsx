@@ -1,6 +1,7 @@
 import React from 'react'
 import Album from '../assets/img/covers.jpg'
 
+
 function Description() {
   return (
     <div className='description'>
@@ -16,6 +17,7 @@ function Description() {
       <div className='album'>
         <img src={Album} className='album-img' />
       </div>
+      
       
     </div>
   )

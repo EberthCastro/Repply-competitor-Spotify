@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
   
 }
+
 .App {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,8 @@
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "logo navbar";
   font-size: 1.5rem;
+  position: fixed;  
+  width: 99vw;
 }
 .logo{
   grid-area: logo;
@@ -72,7 +75,7 @@
 }
 
 .hero{
-  margin-top: 1rem;
+  margin-top: 6rem;
   display: grid;   
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "banner cta";
@@ -114,4 +117,121 @@
 
 /* END HERO */
 
+/* DESCRIPTION */
+.description{
+  margin-top: 1rem;
+  display: grid;   
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "section album";
+  font-size: 1.5rem;
+  color: antiquewhite;
+  width: 99vw;
+  height: 85vh;
+}
+.section{
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rem;  
+  gap: 2rem;  
+  
+}
+.album-img{
+  width: 60%;
+  height: 50%;
+  
+}
+.album{
+  grid-area: album;
+  display: flex;  
+  justify-content: left;
+  align-items: center;  
+  
+}
+/* END DESCRIPTION */
+
+/* FORM */
+.contact{
+  margin-top: 1rem;
+  display: grid;   
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "join form";
+  font-size: 1.5rem;
+  color: antiquewhite;
+  width: 99vw;
+  height: 85vh;
+  
+}
+.join{
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rem;  
+  gap: 2rem; 
+}
+.form{
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;   
+   
+  
+}
+.form-container{
+  background-color: #202027;
+  padding: 2rem 2rem 2rem 2rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+}
+.button-cta2{
+  width: 15rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: antiquewhite;
+  background-color: #2796ff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+/* END FORM */
+
+
+/* FOOTER */
+.footer{
+  margin-top: 1rem;
+  display: grid;   
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "menufooter social";
+  font-size: 1.5rem;
+  color: antiquewhite;
+  width: 99vw;
+  height: 10vh;
+  background-color: #202027;
+}
+.menu-footer{
+  grid-area: menufooter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+.socialLinks{
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.twitter,.facebook{
+  display: flex;
+  gap: 1rem;
+}
+/* END FOOOTER */
 
