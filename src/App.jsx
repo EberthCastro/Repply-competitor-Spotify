@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Route, Routes} from 'react-router-dom'
 
 import './App.css'
 import LogoMenu from './components/LogoMenu'
@@ -12,12 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      <LogoMenu/>
-      <Hero/> 
-      <Description/> 
-      <Footer/> 
-      <Contact/> 
-      <Footer/>   
+      <Routes>
+        <Route path='/' element ={<Hero/>} />
+        <Route path='/description' element ={<Description/>} />
+        <Route path='/contact' element ={<Contact/>} />
+      </Routes>
+      
+        
     </div>
   )
 }
