@@ -1,10 +1,11 @@
 import React from "react";
 import Girl from "../assets/img/girl.png";
 import LogoMenu from "../components/LogoMenu";
+import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
-    <div className="hero-main">
+    <div>
       <LogoMenu />
       
       <div className="hero">
@@ -15,7 +16,7 @@ function Hero() {
           <h1>Feel The Music</h1>
           <p>Stream over 20 thousand song with a single click</p>
           <button className="button-cta">
-            <a>Join Now</a>
+          <Link to='/contact'><p>Join Now</p></Link>
           </button>
         </div>
       </div>

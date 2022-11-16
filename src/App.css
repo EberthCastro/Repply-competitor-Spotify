@@ -89,16 +89,15 @@
 }
 .banner{
   grid-area: banner;
-  display: flex;
+  display: flex;  
   justify-content: center;
-  align-items: center;  
-  
+  align-items: flex-end;    
   
 }
 .girl{
-  width: 45%;
-  height: 95%;
-  
+  width: 40%;
+  height: 80%;
+  padding-left: 4rem; 
   
 }
 .cta{
@@ -106,8 +105,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;  
-  
+  gap: 2rem;    
   height: 100%;
 }
 .button-cta{
@@ -122,6 +120,7 @@
 .button-cta a{
   outline: none;
   text-decoration: none;
+  color: antiquewhite;
 }
 
 /* END HERO */
@@ -149,7 +148,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20rem;  
+  padding-left: 23rem;  
   gap: 2rem;  
   
 }
@@ -161,7 +160,7 @@
 .album{
   grid-area: album;
   display: flex;  
-  justify-content: left;
+  justify-content: right;
   align-items: center;  
   
 }
@@ -248,8 +247,7 @@
 .menu-footer{
   grid-area: menufooter;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 23rem;
   gap: 2rem;
 
 }

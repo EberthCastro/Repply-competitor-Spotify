@@ -1,18 +1,22 @@
 import React from "react";
 import Logo from "../assets/img/logo.svg";
+import { Link } from "react-router-dom";
+import { Navig, Logon, Navbar, A } from "../styles/LogoMenu.elements";
 
 function LogoMenu() {
   return (
-    <div className="Logomenu">
-      <div className="logo">
-        <img src={Logo} className="img" />
+    <Navig>
+      <Logon>
+        <Link to="/">
+          <img src={Logo} className="img" />
+        </Link>
         <p>Soundwave</p>
-      </div>
-      <nav className="navbar">
-        <a href="/#"><p>Discover</p></a>
-        <a href="/#"><p>Join</p></a>
-      </nav>
-    </div>
+      </Logon>
+      <Navbar>
+        <Link to="/description"><A>Discover</A></Link>
+        <Link to="/contact"><A>Join</A></Link>
+      </Navbar>
+    </Navig>
   );
 }
 
