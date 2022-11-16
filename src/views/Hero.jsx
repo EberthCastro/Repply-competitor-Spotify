@@ -2,24 +2,27 @@ import React from "react";
 import Girl from "../assets/img/girl.png";
 import LogoMenu from "../components/LogoMenu";
 import { Link } from 'react-router-dom'
+import { Banner, Cta, Herosection, Girlimg, Button} from "../styles/LogoMenu.elements";
+
 
 function Hero() {
   return (
     <div>
       <LogoMenu />
       
-      <div className="hero">
-        <div className="banner">
-          <img src={Girl} className="girl" />
-        </div>
-        <div className="cta">
+      <Herosection>
+        <Banner>
+          <Girlimg src={Girl} />
+        </Banner>
+        <Cta>
           <h1>Feel The Music</h1>
           <p>Stream over 20 thousand song with a single click</p>
-          <button className="button-cta">
-          <Link to='/contact'><p>Join Now</p></Link>
-          </button>
-        </div>
-      </div>
+          <Button>
+          <Link to='/contact'>Join Now</Link>
+          </Button>
+        </Cta>
+
+      </Herosection>
 
     </div>
   );
