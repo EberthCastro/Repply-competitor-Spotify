@@ -1,25 +1,31 @@
 import React from "react";
 import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+import {
+  Footermain,
+  Menufooter,
+  SocialLinks,
+  Socialnet,
+} from "../styles/LogoMenu.elements";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="menu-footer">
+    <Footermain>
+      <Menufooter>
         <p>About Us</p>
         <p>Contact</p>
-      </div>
+      </Menufooter>
 
-      <div className="socialLinks">
-        <div className="twitter">
-          <FaTwitter/>
+      <SocialLinks>
+        <Socialnet>
+          <FaTwitter />
           <p>Twitter</p>
-        </div>
-        <div className="facebook">
+        </Socialnet>
+        <Socialnet>
           <FaFacebookSquare />
           <p>Facebook</p>
-        </div>
-      </div>
-    </div>
+        </Socialnet>
+      </SocialLinks>
+    </Footermain>
   );
 }
 

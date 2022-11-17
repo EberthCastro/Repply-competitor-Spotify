@@ -7,6 +7,9 @@
   box-sizing: border-box;  
   font-family: 'Poppins', sans-serif;  
 }
+p{
+  font-size: 1.2rem;
+}
 
 .App {
   display: flex;
@@ -14,7 +17,7 @@
   background-color: #2F303A;  
 }
 /* NAVBAR */
-.Logomenu{
+/* .Logomenu{
   padding: 2rem 0rem 2rem 0rem;
   display: grid;  
   grid-template-columns: 2fr 1fr;
@@ -33,9 +36,7 @@
   gap: 1rem;
   color: antiquewhite;   
 }
-/* img{
-  filter: brightness(200%);
-} */
+
 .navbar{
   grid-area: navbar;
   display: flex;  
@@ -48,7 +49,7 @@
   outline: none;
   color: antiquewhite;
   
-}
+} */
 /* END NAVBAR */
 
 /* HERO */
@@ -77,7 +78,7 @@
   background: #3457b21a;
 } */
 
-.hero{
+/* .hero{
   padding-top: 7rem;
   display: grid;   
   grid-template-columns: 1.8fr 1.2fr;
@@ -86,29 +87,29 @@
   color: antiquewhite;
   width: 100vw;
   height: 100vh;
-}
-.banner{
+} */
+/* .banner{
   grid-area: banner;
   display: flex;  
   justify-content: center;
   align-items: flex-end;    
   
-}
-.girl{
+} */
+/* .girl{
   width: 40%;
   height: 80%;
   padding-left: 4rem; 
   
-}
-.cta{
+} */
+/* .cta{
   grid-area: cta;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;    
   height: 100%;
-}
-.button-cta{
+} */
+/* .button-cta{
   width: 7rem;
   padding: 1rem 1rem 1rem 1rem;
   color: antiquewhite;
@@ -116,99 +117,97 @@
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-}
-.button-cta a{
+} */
+/* .button-cta a{
   outline: none;
   text-decoration: none;
   color: antiquewhite;
-}
+} */
 
 /* END HERO */
 
 /* DESCRIPTION */
 
-.description-main{
+/* .description-main{
   height: 100vh;  
   width: 95vw;
-}
-.description{
+} */
+/* .description{
   padding-top: 7rem;
   display: grid;   
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.6fr 1.2fr;
   grid-template-areas: "section album";
   font-size: 1.5rem;
   color: antiquewhite;
-  width: 90vw;
-  height: 89vh;
+  width: 100vw;
+  height: 89vh;    
+  justify-content: center;
   
-  
-}
-.section{
+} */
+/* .section-main{
   grid-area: section;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 23rem;  
+  align-items: flex-end;  
   gap: 2rem;  
   
-}
-.album-img{
-  width: 70%;
-  height: 50%;
-  
-}
-.album{
+} */
+/* .album-img{
+  width: 54%;
+  height: 60%;  
+} */
+
+/* .album{
   grid-area: album;
   display: flex;  
-  justify-content: right;
+  justify-content: center;
   align-items: center;  
+  margin-right: 8rem;  
   
-}
+} */
 /* END DESCRIPTION */
 
 /* FORM */
-.contact{
-  margin-top: 1rem;
+/* .contact{
+  padding-top: 5rem;
   display: grid;   
-  grid-template-columns: 1.8fr 1.2fr;
-  grid-template-areas: "join form";
-  font-size: 1.5rem;
+  grid-template-columns: 1.4fr 1.6fr;
+  grid-template-areas: "join form";  
   color: antiquewhite;
   width: 99vw;
-  height: 85vh;
-  
-}
-.join{
+  height: 89vh;  
+} */
+/* .join{
   grid-area: join;  
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 20rem;   
-  gap: 1rem;
-  font-size: 5rem;
-  font-weight: 800;
-  letter-spacing: 0.4rem; 
-}
-.join-color{
+  justify-content: right;
+  align-items: center;    
+  gap: 1rem; 
+  font-size: 4rem;
+  font-weight: 800;     
+} */
+/* .join-color{
   color: #AE457E;
-}
-.form{
+} */
+/* .form{
   grid-area: form;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: right;   
-   
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   
 }
 .form-container{
   background-color: #202027;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   border-radius: 1rem;
-  width: 65%;
+  width: 50%;
+  height: 70%;
   display: flex;
-  flex-direction: column;  
-  gap: 2rem; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-content: center; 
+  gap: 1.2rem; 
 }
 .form-container .input{
   width: 100%;
@@ -218,8 +217,8 @@
   color: antiquewhite;
   border-radius: 0.3rem;
   padding: 1rem 1rem 1rem 1rem;
-}
-.button-cta2{
+} */
+/* .button-cta2{
   width: 100%;
   padding: 1rem 1rem 1rem 1rem;
   color: antiquewhite;
@@ -227,18 +226,17 @@
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-}
+} */
 /* END FORM */
 
 
 /* FOOTER */
-.footer{
-  padding: 2rem 0rem 1rem 0rem;
+/* .footer{
+  padding: 2rem 0rem 1.5rem 0rem;
   position: absolute;
   display: grid;   
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "menufooter social";
-  font-size: 1.5rem;
+  grid-template-columns: 1.6fr 1.4fr;
+  grid-template-areas: "menufooter social";  
   color: antiquewhite;
   width: 100vw;  
   background-color: #202027;
@@ -247,7 +245,7 @@
 .menu-footer{
   grid-area: menufooter;
   display: flex;
-  padding-left: 23rem;
+  justify-content: center;  
   gap: 2rem;
 
 }
@@ -261,6 +259,6 @@
 .twitter,.facebook{
   display: flex;
   gap: 1rem;
-}
+} */
 /* END FOOOTER */
 

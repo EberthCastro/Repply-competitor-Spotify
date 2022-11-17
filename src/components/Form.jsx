@@ -1,28 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Formcontainer,
+  Formmain,
+  Input,
+} from "../styles/LogoMenu.elements";
 
 function Form() {
   return (
-    <div className="form">
-
-      <div className="form-container">
-        <div className="name">
+    <Formmain>
+      <Formcontainer>
+        <div>
           <p>Name:</p>
-          <input type="text" className="input"/>
+          <Input />
         </div>
-        <div className="email">
+        <div>
           <p>Email:</p>
-          <input type="text" className="input"/>
+          <Input />
         </div>
-        <div className="password">
+        <div>
           <p>Password:</p>
-          <input type="text" className="input"/>
+          <Input type="password" />
         </div>
-        <div className="submit">
-          <button className="button-cta2">Join Now</button>
-        </div>
-      </div>
-
-    </div>
+        <Button widthF="100%">
+          <Link to="/contact">Join Now</Link>
+        </Button>
+      </Formcontainer>
+    </Formmain>
   );
 }
 

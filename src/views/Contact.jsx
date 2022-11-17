@@ -1,22 +1,23 @@
-import React from 'react'
-import Form from '../components/Form'
-import LogoMenu from '../components/LogoMenu'
-import Footer from './Footer'
+import React from "react";
+import Form from "../components/Form";
+import LogoMenu from "../components/LogoMenu";
+import { Contactform, Join } from "../styles/LogoMenu.elements";
+import Footer from "./Footer";
 
 function Contact() {
   return (
-    <div className='contact-main'>
-      <LogoMenu/>
-      <div className="contact">
-      <div className='join'>
-        <span>Join the </span><span className='join-color'>fun.</span>
-      </div>
-      <Form/>      
-      </div>
-      <Footer/>
-      
+    <div>
+      <LogoMenu />
+      <Contactform>
+        <Join>
+          <span>Join the </span>
+          <span className="join-color">fun.</span>
+        </Join>
+        <Form />
+      </Contactform>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
