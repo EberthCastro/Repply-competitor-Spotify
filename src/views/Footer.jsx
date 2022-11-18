@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+import { FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
 import {
   Footermain,
   Menufooter,
@@ -23,6 +23,10 @@ function Footer() {
         <Socialnet>
           <FaFacebookSquare />
           <p>Facebook</p>
+        </Socialnet>
+        <Socialnet>
+          <FaInstagram />
+          <p>Instagram</p>
         </Socialnet>
       </SocialLinks>
     </Footermain>
