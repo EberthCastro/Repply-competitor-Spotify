@@ -1,4 +1,4 @@
-:root{
+/* :root{
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 }
 * {
@@ -15,7 +15,7 @@ p{
   display: flex;
   flex-direction: column;
   background-color: #2F303A;  
-}
+} */
 /* NAVBAR */
 /* .Logomenu{
   padding: 2rem 0rem 2rem 0rem;

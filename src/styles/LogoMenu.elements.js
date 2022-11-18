@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const media = {
+  mobile: `@media(max-width: 1090px)`,
+};
+
 export const Navig = styled.div`
   padding: 2rem 0rem 2rem 0rem;
   display: grid;
@@ -8,12 +12,16 @@ export const Navig = styled.div`
   font-size: 1.2rem;
   position: absolute;
   width: 100vw;
+
+  ${media.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const Logon = styled.div`
   grid-area: logo;
   display: flex;
-  margin-left: -10rem;
+  /* margin-left: -10rem; */
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -51,6 +59,13 @@ export const Herosection = styled.div`
   color: antiquewhite;
   width: 100vw;
   height: 100vh;
+
+  ${media.mobile} {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem 0rem 4rem;
+  }
 `;
 
 export const Banner = styled.div`
@@ -58,6 +73,10 @@ export const Banner = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  ${media.mobile} {
+    display: none;
+  }
 `;
 
 export const Cta = styled.div`
@@ -100,6 +119,16 @@ export const Discover = styled.div`
   width: 100vw;
   height: 89vh;
   justify-content: center;
+
+  ${media.mobile} {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0rem 2rem 0rem 2rem;
+    gap: 2rem;
+  }
 `;
 
 export const Discoversection = styled.div`
@@ -109,17 +138,20 @@ export const Discoversection = styled.div`
   justify-content: center;
   align-items: flex-end;
   gap: 2rem;
+
+  ${media.mobile} {
+    align-items: center;
+  }
 `;
 export const Albumimg = styled.img`
-  width: 54%;
-  height: 60%;
+  width: 20rem;
+  height: 20rem;
 `;
 export const Cover = styled.div`
   grid-area: album;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8rem;
 `;
 export const Contactform = styled.div`
   padding-top: 5rem;
@@ -129,18 +161,45 @@ export const Contactform = styled.div`
   color: antiquewhite;
   width: 99vw;
   height: 89vh;
+
+  ${media.mobile} {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem 2rem 0rem 2rem;
+    gap: 5rem;
+    
+  }
 `;
 export const Join = styled.div`
   grid-area: join;
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 1rem;
-  font-size: 4rem;
-  font-weight: 800;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
 
-  .join-color {
+  h1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .join-color2 {
     color: #ae457e;
+  }
+
+  ${media.mobile} {
+    font-size: 1.5rem;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    width: 20rem;    
+    
   }
 `;
 export const Formmain = styled.div`
@@ -148,44 +207,62 @@ export const Formmain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  ${media.mobile} {   
+   display: flex;   
+   justify-content: center;   
+  }
 `;
 export const Formcontainer = styled.div`
   background-color: #202027;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 1rem;
-  width: 50%;
-  height: 70%;
+  width: 30rem;
+  height: 24rem;
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-content: center; 
-  gap: 1.2rem; 
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1.2rem;
 `;
 export const Input = styled.input`
   width: 100%;
   height: 2rem;
   background-color: #202027;
   border-color: wheat;
+  border: 0.1rem solid;
   color: antiquewhite;
   border-radius: 0.3rem;
-  padding: 1rem 1rem 1rem 1rem; 
+  padding: 1rem 1rem 1rem 1rem;
 `;
 
 export const Footermain = styled.div`
   padding: 2rem 0rem 1.5rem 0rem;
   position: absolute;
-  display: grid;   
+  display: grid;
   grid-template-columns: 1.6fr 1.4fr;
-  grid-template-areas: "menufooter social";  
+  grid-template-areas: "menufooter social";
   color: antiquewhite;
-  width: 100vw;  
-  background-color: #202027; 
+  width: 100vw;
+  background-color: #202027;
+  ${media.mobile} {   
+   display: flex;   
+   justify-content: center; 
+   gap: 4rem;
+   padding: 2rem 0rem 2rem 0rem;
+       
+  }
 `;
 export const Menufooter = styled.div`
   grid-area: menufooter;
   display: flex;
-  justify-content: center;  
-  gap: 2rem; 
+  justify-content: center;
+  gap: 2rem;
+  ${media.mobile} {   
+   display: flex;   
+   justify-content: center; 
+   
+    
+  }
 `;
 export const SocialLinks = styled.div`
   grid-area: social;
@@ -193,10 +270,21 @@ export const SocialLinks = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  ${media.mobile} {   
+   display: flex;   
+   justify-content: center; 
+        
+  }
 `;
 export const Socialnet = styled.div`
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
+
+  ${media.mobile} {   
+   p{
+    display: none;
+   }        
+  }
+
+
 `;
-
-

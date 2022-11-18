@@ -16,7 +16,7 @@ function Hero() {
         </Banner>
         <Cta>
           <h1>Feel The Music</h1>
-          <p>Stream over 20 thousand song with a single click</p>
+          <p>Stream over 20 thousand songs with a single click</p>
           <Button widthF="7rem">
           <Link to='/contact'>Join Now</Link>
           </Button>
