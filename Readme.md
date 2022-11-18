@@ -3,7 +3,7 @@
 
 
 ##### Tabla de Contenidos
-- [WHEEL OF NUN](#wheel-of-nun)   
+  
   - [Tabla de Contenidos](#tabla-de-contenidos)
   - [Información General](#información-general)
   - [Despliege](#despliegue)
