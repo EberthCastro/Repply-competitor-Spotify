@@ -36,7 +36,6 @@ function Description() {
                 <p>More</p>
               </div>
             </Icons2>
-            
             <p>
               By joining you can benefit by listening to the latest albums
               released.
