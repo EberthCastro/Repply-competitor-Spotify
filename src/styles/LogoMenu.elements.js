@@ -32,7 +32,7 @@ export const Logon = styled.div`
   }
 `;
 
-export const Navbar = styled.nav`
+export const Nav = styled.nav`
   grid-area: navbar;
   display: flex;
   justify-content: center;
@@ -139,9 +139,38 @@ export const Discoversection = styled.div`
   align-items: flex-end;
   gap: 2rem;
 
+  .new-icons{
+    gap: 5rem;
+    ${media.mobile} {
+    align-items: center;
+  }
+  }
+
   ${media.mobile} {
     align-items: center;
   }
+`;
+export const Icons= styled.img`
+  width: 5rem;
+  height: 5rem;
+  padding: 1.2rem;
+  background-color: #202027; 
+  margin: 1rem 0.4rem 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  
+  
+`;
+export const Icons2= styled.div`
+  width: 8rem;
+  height: 8rem; 
+  display: flex;
+  margin: 1rem 0.4rem 1rem 0rem;
+  
+  ${media.mobile} {
+    align-items: center;
+  }
+  
 `;
 export const Albumimg = styled.img`
   width: 20rem;

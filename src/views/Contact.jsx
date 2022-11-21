@@ -1,13 +1,13 @@
 import React from "react";
 import Form from "../components/Form";
-import LogoMenu from "../components/LogoMenu";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Contactform, Join } from "../styles/LogoMenu.elements";
 
 function Contact() {
   return (
     <div>
-      <LogoMenu />
+      <Navbar />
       <Contactform>
         <Join>
           <h1 >Join the <span className="join-color2"> fun.</span></h1>          

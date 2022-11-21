@@ -10,7 +10,7 @@
   - [Tecnologías](#tecnologías)
   - [Colaboración](#colaboración)
   - [Autores](#autores)
-  - [FAQs](#faqs)
+
 
 ***
 ## Información General

@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../assets/img/logo.svg";
 import { Link } from "react-router-dom";
-import { Navig, Logon, Navbar } from "../styles/LogoMenu.elements";
+import { Navig, Logon, Nav } from "../styles/LogoMenu.elements";
 
-function LogoMenu() {
+function Navbar() {
   return (
     <Navig>
       <Logon>
@@ -12,12 +12,12 @@ function LogoMenu() {
         </Link>
         <p>Soundwave</p>
       </Logon>
-      <Navbar>
+      <Nav>
         <Link to="/description">Discover</Link>
         <Link to="/contact">Join</Link>
-      </Navbar>
+      </Nav>
     </Navig>
   );
 }
 
-export default LogoMenu;
+export default Navbar;
